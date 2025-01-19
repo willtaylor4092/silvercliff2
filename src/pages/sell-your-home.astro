@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContextAlert from '../components/ContextAlert.astro';
+import Markdown from '../components/Markdown.astro';
+
+const explainer = `
+Sell Your Home Fast & Hassle-Free With Silver Cliff Properties.
+
+At Silver Cliff Properties, we make selling your house simple. Skip the repairs, showings, and commissions—sell your home “as is” for cash. We offer fair, transparent deals and can close in as little as three weeks. Ready for a stress-free sale? Get started today!
+`;
+---
+
+<Layout title="Welcome to Silver Cliff Properties.">
+    <ContextAlert class="mb-4" />
+    <h1 class="mb-10">Silver Cliff Investments</h1>
+    <Markdown content={explainer} class="text-lg mb-10" />
+    <p class="mb-8">
+        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Get A Cash Offer</a>
+    </p>
+</Layout>
